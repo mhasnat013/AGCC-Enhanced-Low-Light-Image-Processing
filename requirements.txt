@@ -1,0 +1,24 @@
+# Notebook and data analysis
+jupyterlab
+ipywidgets
+numpy
+pandas
+matplotlib
+Pillow
+
+# Image processing and evaluation
+opencv-python
+scikit-image
+PyWavelets
+
+# Dataset access
+datasets
+huggingface-hub
+
+# Optional no-reference quality metrics used by the notebooks
+torch
+pyiqa
+
+# Report and presentation generation
+python-docx
+python-pptx

@@ -1,0 +1,56 @@
+name: Python CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Validate core implementation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements-ci.txt
+
+      - name: Install test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-ci.txt
+
+      - name: Check Python syntax
+        run: python -m py_compile "Code/AGCC Core Implementation.py"
+
+      - name: Validate notebook files
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          notebooks = sorted(Path("Code").glob("*.ipynb"))
+          if not notebooks:
+              raise SystemExit("No notebooks found in Code/")
+
+          for notebook in notebooks:
+              with notebook.open(encoding="utf-8") as file:
+                  data = json.load(file)
+              if "cells" not in data:
+                  raise ValueError(f"{notebook} does not contain notebook cells")
+              print(f"Validated {notebook} ({len(data['cells'])} cells)")
+          PY
+
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
