@@ -1,0 +1,7 @@
+Unnamed: 0,Stage,Red Mean,Green Mean,Blue Mean,Red Standard Deviation,Green Standard Deviation,Blue Standard Deviation
+0,Input Low-Light Image,0.11227,0.063138,0.065153,0.05234,0.030998,0.040807
+1,Step 1 Adaptive Gamma Correction,0.356187,0.278847,0.279653,0.110227,0.074418,0.083445
+2,Step 2 RGB Mean Color Correction,0.356187,0.298692,0.299016,0.110227,0.080181,0.089725
+3,Step 3 Original AGCC Final Output,0.426436,0.357622,0.357829,0.132216,0.096525,0.107933
+4,Step 5 LAB CLAHE Local Contrast Enhancement,0.50841,0.432944,0.432287,0.152627,0.14621,0.150166
+5,Step 12 Final Improved Hybrid AGCC Output,0.574442,0.470021,0.469262,0.199823,0.185984,0.195471

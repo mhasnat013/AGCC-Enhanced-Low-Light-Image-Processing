@@ -1,0 +1,4 @@
+Unnamed: 0,Method,PSNR,SSIM,NIQE,BRISQUE,Entropy,Contrast,Sharpness,Color Balance Error,Intensity Mean,Execution Time (sec)
+0,Paper Reported AGCC on LOL,17.269,0.71,,,,,,,,0.051
+1,Original AGCC Paper Method,16.4673,0.6151,7.5214,22.6845,6.5933,35.3876,1260.3023,0.0153,93.8715,0.0465
+2,Improved Hybrid AGCC Method,17.2236,0.6833,5.5877,31.4834,7.2032,44.2303,387.432,0.0153,111.6161,0.1896

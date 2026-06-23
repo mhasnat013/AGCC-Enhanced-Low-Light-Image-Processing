@@ -1,0 +1,21 @@
+Unnamed: 0,No.,Technique / Component,In Paper,Notebook Status,Priority
+0,1,RGB Channel Extraction,Yes,Implemented,Critical
+1,2,RGB Mean Calculation,Yes,Implemented,Critical
+2,3,Luminance Calculation using Equation 3,Yes,Implemented,Critical
+3,4,Average Color Factor using Equation 4,Yes,Implemented,Critical
+4,5,Adaptive Gamma Calculation using Equation 5,Yes,Implemented,Critical
+5,6,Adaptive Gamma Correction using Equation 6,Yes,Implemented,Critical
+6,7,Color Correction using Equation 7,Yes,Implemented,Critical
+7,8,Contrast Stretching using Equation 8,Yes,Implemented,Critical
+8,9,Histogram Analysis,Yes,Implemented,Critical
+9,10,RGB Statistics Table,Yes,Implemented,Critical
+10,11,Step 1 Output Visualization,Yes,Implemented,Critical
+11,12,Step 2 Output Visualization,Yes,Implemented,Critical
+12,13,Step 3 Final Output Visualization,Yes,Implemented,Critical
+13,14,Execution Time Measurement,Yes,Implemented,Critical
+14,15,Peak Signal-to-Noise Ratio Calculation,Yes,Implemented,Critical
+15,16,Structural Similarity Index Measure Calculation,Yes,Implemented,Critical
+16,17,Natural Image Quality Evaluator Calculation,Yes,Implemented if pyiqa loads,Critical
+17,18,Blind/Referenceless Image Spatial Quality Eval...,Yes,Implemented if pyiqa loads,Critical
+18,19,Dataset-wise Evaluation,Yes,Implemented,Critical
+19,20,Visual Comparison Grid,Yes,Implemented,Critical

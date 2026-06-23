@@ -1,0 +1,4 @@
+Unnamed: 0,Dataset / Experiment,Metric,Paper Reported AGCC Result,Our Implementation Result,Difference,Higher or Lower is Better
+0,LOL Dataset,Peak Signal-to-Noise Ratio,17.269,16.300999,-0.968001,Higher is better
+1,LOL Dataset,Structural Similarity Index Measure,0.71,0.495109,-0.214891,Higher is better
+2,LOL Dataset,Average Execution Time Seconds,0.051,0.042481,-0.008519,Lower is better

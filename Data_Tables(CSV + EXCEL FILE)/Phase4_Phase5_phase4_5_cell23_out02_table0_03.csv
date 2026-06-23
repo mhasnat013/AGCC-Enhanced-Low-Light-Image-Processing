@@ -1,0 +1,6 @@
+Unnamed: 0,Image Stage,Red Mean,Green Mean,Blue Mean,Red Standard Deviation,Green Standard Deviation,Blue Standard Deviation,Overall Mean,Overall Standard Deviation
+0,Input Low-Light Image,0.082439,0.101356,0.109435,0.06713,0.098517,0.126522,0.097744,0.101001
+1,Step 1 - Adaptive Gamma Correction Output,0.284335,0.308578,0.295181,0.129491,0.14853,0.192149,0.296032,0.159212
+2,Step 2 - Color Correction Output,0.291332,0.308578,0.299116,0.132723,0.14853,0.194968,0.299675,0.161078
+3,Step 3 - Final AGCC Output,0.558144,0.420833,0.459421,0.254146,0.306712,0.299205,0.479466,0.29338
+4,Ground Truth / Normal-Light Reference,0.491093,0.496213,0.469218,0.240033,0.276246,0.344485,0.485508,0.290407

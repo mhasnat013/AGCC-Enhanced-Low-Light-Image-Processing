@@ -1,0 +1,7 @@
+Unnamed: 0,Dataset,Paper_AGCC_Time_seconds
+0,LOL,0.051
+1,Zero_test,0.063
+2,GladNet,0.096
+3,DICM,0.124
+4,VV,0.098
+5,LIME,0.109

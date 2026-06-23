@@ -1,0 +1,24 @@
+Language: 
+Python 
+
+
+Tool: 
+Google Colab
+Jupiter
+
+
+Libraries Required: 
+numpy
+pandas
+opencv-python
+matplotlib
+scikit-image
+Pillow
+pywavelets
+ipywidgets
+datasets
+huggingface-hub
+torch
+pyiqa
+python-docx
+python-pptx

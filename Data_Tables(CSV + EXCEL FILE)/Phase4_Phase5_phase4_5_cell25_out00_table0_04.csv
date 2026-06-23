@@ -1,0 +1,8 @@
+Unnamed: 0,Metric,Our Implementation Result
+0,Average Input PSNR,7.698122
+1,Average Input SSIM,0.17833
+2,Average AGCC PSNR,16.300999
+3,Average AGCC SSIM,0.495109
+4,Average AGCC NIQE,8.359755
+5,Average AGCC BRISQUE,37.533999
+6,Average Execution Time Seconds,0.042481

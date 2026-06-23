@@ -1,0 +1,7 @@
+Unnamed: 0,Metric,Dataset,Paper_AGCC_Value
+0,PSNR,LOL,17.269
+1,PSNR,GladNet,19.476
+2,SSIM,LOL,0.71
+3,SSIM,GladNet,0.87
+4,Average PSNR,Full Reference Average,18.372
+5,Average SSIM,Full Reference Average,0.79

@@ -1,0 +1,11 @@
+Unnamed: 0,Technique / Methodology,Purpose,Working Principle,Where Implemented,Output Produced
+0,RGB Channel Extraction,"Separate the input image into red, green, and ...",The RGB image array is divided into three matr...,extract_rgb_channels() function,Separate RGB channel data used for statistics ...
+1,RGB Mean Calculation,Measure the average intensity of each color ch...,Mean value of every RGB channel is calculated ...,calculate_rgb_statistics() function,"Red mean, green mean, blue mean, and standard ..."
+2,Luminance Calculation,Estimate the brightness level of the image acc...,Uses weighted RGB formula: 0.2126R + 0.7152G +...,calculate_luminance_factor() function,Luminance factor used in adaptive gamma calcul...
+3,Average Color Factor,Estimate overall color intensity level of the ...,"Average of mean red, mean green, and mean blue...",calculate_average_color_factor() function,Average color factor used in adaptive gamma ca...
+4,Adaptive Gamma Calculation,Calculate a gamma value suitable for the input...,Gamma is calculated from luminance and average...,calculate_adaptive_gamma() function,Image-specific adaptive gamma value.
+5,Adaptive Gamma Correction,Enhance image brightness without using a fixed...,Applies nonlinear power-law transformation I' ...,adaptive_gamma_correction() function,Step 1 enhanced brightness image.
+6,Color Correction,Balance the RGB channels after brightness enha...,Weak channels are adjusted using the maximum c...,color_correction_rgb_mean() function,Step 2 color-balanced image.
+7,Contrast Stretching,Improve contrast and reveal details in the enh...,Maps intensity range to a wider range using mi...,contrast_stretching() function,Step 3 final AGCC output image.
+8,Histogram Analysis,Analyze pixel intensity distribution before an...,Counts pixel frequency at each intensity level...,plot_rgb_histograms() function,RGB histogram graphs for each processing stage.
+9,"PSNR, SSIM, NIQE, BRISQUE, Time Evaluation",Evaluate enhancement quality and computational...,Full-reference and no-reference metrics are ca...,Metric functions and result table cells,Quantitative evaluation tables and graphs.

@@ -1,0 +1,11 @@
+Unnamed: 0,Metric,Original AGCC Average,Improved Hybrid AGCC Average,Improvement Percentage,Better Direction
+0,PSNR,16.4673,17.2236,4.5926,Higher is better
+1,SSIM,0.6151,0.6833,11.0808,Higher is better
+2,NIQE,7.5214,5.5877,25.709,Lower is better
+3,BRISQUE,22.6845,31.4834,-38.7882,Lower is better
+4,Entropy,6.5933,7.2032,9.2504,Higher is better
+5,Contrast,35.3876,44.2303,24.9881,Higher is better
+6,Sharpness,1260.3023,387.432,-69.2588,Higher is better
+7,Color Balance Error,0.0153,0.0153,0.0544,Lower is better
+8,Intensity Mean,93.8715,111.6161,18.903,Higher is better
+9,Execution Time (sec),0.0465,0.1896,-307.6617,Lower is better
