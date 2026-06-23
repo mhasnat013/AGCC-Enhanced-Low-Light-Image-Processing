@@ -3,6 +3,7 @@
 import importlib.util
 from pathlib import Path
 import unittest
+import warnings
 
 import numpy as np
 
@@ -52,10 +53,12 @@ class TestAGCCCore(unittest.TestCase):
         self.assertTrue(np.all(result["final"] <= 1.0))
 
     def test_identical_images_have_perfect_ssim(self):
-        metrics = agcc.evaluate_with_reference(
-            self.low_light_rgb,
-            self.low_light_rgb,
-        )
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore", RuntimeWarning)
+            metrics = agcc.evaluate_with_reference(
+                self.low_light_rgb,
+                self.low_light_rgb,
+            )
 
         self.assertAlmostEqual(metrics["ssim"], 1.0, places=6)
         self.assertTrue(np.isinf(metrics["psnr"]))

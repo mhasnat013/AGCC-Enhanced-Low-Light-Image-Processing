@@ -3,7 +3,10 @@ message: "If you use this project, please cite this repository."
 title: "AGCC Enhanced Low-Light Image Processing"
 type: software
 authors:
-    given-names: "Muhammad Hasnat Fakhar"
+  - family-names: "Fakhar"
+    given-names: "Muhammad Hasnat"
+  - family-names: "Sajjad"
+    given-names: "Hassan"
 repository-code: "https://github.com/mhasnat013/AGCC-Enhanced-Low-Light-Image-Processing"
 license: MIT
 date-released: 2026-06-23

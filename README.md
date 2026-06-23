@@ -4,7 +4,6 @@
 
 ### Research reproduction, classical image enhancement, and comparative evaluation
 
-[![Python CI](https://github.com/mhasnat013/AGCC-Enhanced-Low-Light-Image-Processing/actions/workflows/python-ci.yml/badge.svg)](https://github.com/mhasnat013/AGCC-Enhanced-Low-Light-Image-Processing/actions/workflows/python-ci.yml)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-F37626?logo=jupyter&logoColor=white)](https://jupyter.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -109,9 +108,8 @@ The source tables are available in [`Data_Tables(CSV + EXCEL FILE)`](Data_Tables
 ├── Report/                          # Final project report
 ├── Research Paper/                  # Selected source paper
 ├── Results/                         # Saved figures and comparisons
-├── tests/                           # Automated core-function tests
-├── requirements.txt                 # Full notebook dependencies
-└── requirements-ci.txt              # Lightweight automated-test dependencies
+├── tests/                           # Core-function validation tests
+└── requirements.txt                 # Project dependencies
 ```
 
 ## Notebooks
@@ -204,16 +202,16 @@ The main public functions are:
 
 Images passed to these functions should be RGB NumPy arrays with shape `(height, width, 3)`.
 
-## GitHub Actions
+## Validating the core implementation
 
-The repository includes a small **Python CI** workflow. On every push or pull request, GitHub automatically:
+After installing the project dependencies, the reusable core functions can be checked locally with:
 
-1. installs the lightweight core dependencies;
-2. checks that the Python source compiles;
-3. verifies that all notebooks contain valid JSON;
-4. runs automated tests for the main AGCC functions.
+```bash
+python -m py_compile "Code/AGCC Core Implementation.py"
+python -m unittest discover -s tests -v
+```
 
-Open the repository's **Actions** tab to see each run. A green check means the automated checks passed. The workflow intentionally does not execute the full research notebooks because they download datasets/models and are too heavy for a basic CI job.
+The included tests verify input normalization, adaptive gamma calculation, output dimensions and ranges, and PSNR/SSIM evaluation behavior. The full research notebooks are not part of these lightweight tests because they download datasets and optional quality-assessment models.
 
 ## Reports and supporting material
 
@@ -230,11 +228,12 @@ Open the repository's **Actions** tab to see each run. A green check means the a
 - NIQE and BRISQUE are optional in the notebooks; unavailable models are handled without stopping the main experiment.
 - Saved results and exported tables are included so the project can still be reviewed without rerunning expensive cells.
 
-## Author
+## Project team
 
-**Muhammad Hasnat Fakhar**
+- **Muhammad Hasnat Fakhar** — [@mhasnat013](https://github.com/mhasnat013)
+- **Hassan Sajjad**
 
-- GitHub: [@mhasnat013](https://github.com/mhasnat013)
+This work was completed as a Digital Image Processing semester project under the supervision of **Mr. Yaseen Mushtaq**.
 
 ## License
 
